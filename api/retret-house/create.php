@@ -1,5 +1,5 @@
 <?php 
-include('../../includes/db.php');
+include($_SERVER['DOCUMENT_ROOT'] . '/includes/db.php');
 
 $image_ids = $_POST['image_ids'];
 $name = $_POST['name'];

@@ -1,5 +1,5 @@
 <?php
-include('db.php');
+include($_SERVER['DOCUMENT_ROOT'] . '/includes/db.php');
 $result = $conn->query("SELECT * FROM images");
 
 $images = [];

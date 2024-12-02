@@ -1,5 +1,5 @@
 <?php 
-include('../../includes/db.php');
+include($_SERVER['DOCUMENT_ROOT'] . '/includes/db.php');
 
 session_start();
 

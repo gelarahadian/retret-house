@@ -1,5 +1,5 @@
 <?php 
-include('../../includes/db.php ');
+include($_SERVER['DOCUMENT_ROOT'] . '/includes/db.php');
 
 $image_id = isset($_POST['image_id']) && $_POST['image_id'] !== '' ? (int)$_POST['image_id'] : null;
 $phone = $_POST['phone'];

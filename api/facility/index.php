@@ -1,5 +1,5 @@
 <?php 
-include('../../includes/db.php');
+include($_SERVER['DOCUMENT_ROOT'] . '/includes/db.php');
 
 // Jumlah data per halaman dengan nilai default
 $defaultLimit = 10;

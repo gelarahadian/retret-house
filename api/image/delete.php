@@ -1,6 +1,6 @@
 <?php
 if ($_SERVER['REQUEST_METHOD'] === 'DELETE') {
-    include('../../includes/db.php ');
+    include($_SERVER['DOCUMENT_ROOT'] . '/includes/db.php');
     parse_str(file_get_contents("php://input"), $_DELETE);
     $id = $_DELETE['id'] ?? null;   
 

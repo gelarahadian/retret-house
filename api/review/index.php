@@ -1,5 +1,5 @@
 <?php 
-include('../../includes/db.php');
+include($_SERVER['DOCUMENT_ROOT'] . '/includes/db.php');
 
 $defaultLimit = 10;
 $limit = isset($_GET['limit']) && is_numeric($_GET['limit']) ? (int)$_GET['limit'] : $defaultLimit;
