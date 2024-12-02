@@ -1,0 +1,5 @@
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^retret-house/(.*)$ retret-house/index.php?slug=$1 [L,QSA]
+RewriteRule ^reservation/(.*)$ reservation/index.php?room_code=$1 [L,QSA]
